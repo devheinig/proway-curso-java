@@ -4,14 +4,45 @@
  */
 package br.com.proway.granacerta.bean;
 
-/**
- *
- * @author 73824
- */
 public class Proprietario {
-    public int id;
-    public String nome;
-    public String cpf;
-    public String email;
-    public String senha;
+
+    private int id;
+    private String nome;
+    private String cpf;
+    private String email;
+
+    // Get e Set métodos que permitem o acesso para consultar e definir valor
+    // Get é um método que permite obter o valor d atributo privado
+    public int getId() {
+        return id;
+    }
+
+    //Set é um método que permite definir um valor para o atributo privado
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+    
+    public void setCpf(String cpf){
+        this.cpf = cpf;
+    }
+    
+    public String getEmail(){
+        return email;
+    }
+    
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }
